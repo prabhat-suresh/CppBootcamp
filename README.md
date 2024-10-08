@@ -137,7 +137,7 @@ while (condition) {
 }
 ```
 
-> [!TIP] Practise
+> [!TIP] Practise - Loops and Conditionals
 > 
 > **Question 1:**
 > Write a program which does the following:
@@ -151,7 +151,7 @@ while (condition) {
 >> Sum of even numbers is: 6
 >> Sum of odd numbers is : 9
 >> Total sum = 15
-
+>
 > **Question 2:**
 > Fibonacci numbers. The fibonacci sequence is as follows: 1 1 2 3 5 8 13 ...
 > The first two numbers are '1' each and every number that follows it is the sum of the preceeding two numbers (the two numbers before it). 
@@ -185,6 +185,21 @@ arr[0] = 10;
 string s = "hello world!";
 s[0] = 'H';
 s[6] = 'W';
+```
+
+### Header Files
+
+```cpp
+#include <iostream>    // for input and output
+#include <string>      // for string
+#include <vector>      // for vector
+#include <algorithm>   // for sorting, searching, etc.
+#include <cmath>       // for mathematical functions
+```
+
+```cpp
+#include <bits/stdc++.h>    // for all the STL libraries which includes all the above and much more
+using namespace std;        // to use std namespace so that we don't have to write std:: before every function
 ```
 
 ### Functions
@@ -240,39 +255,3 @@ int main() {
     cout << x << endl;
 }
 ```
-
-
-
-> [!NOTE]
-> s;dkfj
-
-> [!IMPORTANT]
-> s;dkfj
-
-> [!TIP]
-> s;dkfj
-
-> [!WARNING]
-> s;dkfj
-
-> [!CAUTION]
-> s;dkfj
-
-> [!ATTENTION]
-> s;dkfj
-
-> [!FATAL]
-> s;dkfj
-
-> [!ERROR]
-> s;dkfj
-
-> [!HELP]
-> s;dkfj
-
-> [!INFO]
-> s;dkfj
-
-> [!BUG]
-> s;dkfj
-
