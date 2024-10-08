@@ -244,14 +244,35 @@ int main() {
 
 
 > [!NOTE]
+> s;dkfj
+
 > [!IMPORTANT]
+> s;dkfj
+
 > [!TIP]
+> s;dkfj
+
 > [!WARNING]
+> s;dkfj
+
 > [!CAUTION]
+> s;dkfj
+
 > [!ATTENTION]
+> s;dkfj
+
 > [!FATAL]
+> s;dkfj
+
 > [!ERROR]
+> s;dkfj
+
 > [!HELP]
+> s;dkfj
+
 > [!INFO]
+> s;dkfj
+
 > [!BUG]
+> s;dkfj
 
