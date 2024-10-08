@@ -240,3 +240,18 @@ int main() {
     cout << x << endl;
 }
 ```
+
+
+
+[!NOTE]
+[!IMPORTANT]
+[!TIP]
+[!WARNING]
+[!CAUTION]
+[!ATTENTION]
+[!FATAL]
+[!ERROR]
+[!HELP]
+[!INFO]
+[!BUG]
+
