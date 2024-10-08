@@ -50,7 +50,7 @@ int x = 5;
 float f = 0.01;
 char c = 'c';
 bool b = true;
-string s = "Don't stop at C++. Once you get familiar with low level concepts learn Rustand functional programming languages like Ocaml";
+string s = "Don't stop at C++. Once you get familiar with low level concepts learn Rust and functional programming languages like Ocaml";
 ```
 
 ### Operators
@@ -137,23 +137,112 @@ while (condition) {
 }
 ```
 
-### Functions
+> [!Tip] Practise
+> 
+> **Question 1:**
+> Write a program which does the following:
+> Accepts an integer n asks the user to input n numbers and output the sum of even numbers, odd numbers and the total sum
+> 
+>> **Sample input:**
+>> 4 (value of n)
+>> 1 6 3 5 (4 numbers inputted by the user)
+> 
+>> **Sample output:**
+>> Sum of even numbers is: 6
+>> Sum of odd numbers is : 9
+>> Total sum = 15
 
-```cpp
-int add(int a, int b) {
-    return a + b;
-}
-```
+> **Question 2:**
+> Fibonacci numbers. The fibonacci sequence is as follows: 1 1 2 3 5 8 13 ...
+> The first two numbers are '1' each and every number that follows it is the sum of the preceeding two numbers (the two numbers before it). 
+> Eg: (2 = 1+1, 3 = 1+2, 5 = 2+3)
+> Write a program to print the first 'n' fibonacci numbers.
+>
+>> **Sample input:**
+>> n = 6
+>
+>> **Sample output:**
+>> 1 1 2 3 5 8
+>
+> **Question 3:**
+>
+> Prime Numbers. A prime number is a number (>=2) which has its factors as 1 and the number itself ONLY.
+> Write a program that takes as input 'n' (an integer) and prints all the prime numbers in the range [2,n].
+>> **Sample input : 11**
+>> **Sample output : 2 3 5 7 11**
 
 ### Arrays
 
 ```cpp
 int arr[5] = {1, 2, 3, 4, 5};
+arr[0] = 10;
+// now arr is {10, 2, 3, 4, 5}
+```
+
+#### Strings
+
+```cpp
+string s = "hello world!";
+s[0] = 'H';
+s[6] = 'W';
+```
+
+### Functions
+
+```cpp
+int add(int a, int b) {   // function declaration
+    return a + b;
+}
+
+int main() {
+    int x = add(5, 3);    // function call
+    cout << x << endl;
+}
+```
+
+### Recursion
+
+```cpp
+int factorial(int n) {
+    if (n == 0) {   // base case
+        return 1;
+    }
+    else {
+        return n * factorial(n - 1);    // recursive call
+    }
+}
 ```
 
 ### Pointers
 
 ```cpp
-int *ptr;
-ptr = &arr[0];
+// call by reference
+void increment(int *x) { 
+    // a new integer pointer variable x is created in the function scope and the value of the parameter passed is copied to it
+    (*x)++;
+}
+
+// call by value
+void increment(int x) { 
+    // a new integer variable x is created in the function scope and the value of the parameterpassed is copied to it
+
+    x++;    
+}
+
+int main() {
+    int x = 5;
+    increment(x);
+    cout << x << endl;
+
+    int *p = &x;
+    increment(p);
+    // or equivalently increment(&x);
+    cout << x << endl;
+}
 ```
+
+
+
+
+
+
