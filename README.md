@@ -243,15 +243,15 @@ int main() {
 
 
 
-[!NOTE]
-[!IMPORTANT]
-[!TIP]
-[!WARNING]
-[!CAUTION]
-[!ATTENTION]
-[!FATAL]
-[!ERROR]
-[!HELP]
-[!INFO]
-[!BUG]
+> [!NOTE]
+> [!IMPORTANT]
+> [!TIP]
+> [!WARNING]
+> [!CAUTION]
+> [!ATTENTION]
+> [!FATAL]
+> [!ERROR]
+> [!HELP]
+> [!INFO]
+> [!BUG]
 
