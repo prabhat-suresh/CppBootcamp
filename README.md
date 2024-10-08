@@ -137,7 +137,7 @@ while (condition) {
 }
 ```
 
-> [!Tip] Practise
+> [!TIP] Practise
 > 
 > **Question 1:**
 > Write a program which does the following:
@@ -240,9 +240,3 @@ int main() {
     cout << x << endl;
 }
 ```
-
-
-
-
-
-
