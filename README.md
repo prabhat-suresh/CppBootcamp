@@ -137,24 +137,22 @@ while (condition) {
 }
 ```
 
-> [!TIP]
-> Practise - Loops and Conditionals
-
-
-
+> [!IMPORTANT]
+> The only way you get better at programming is by practicing. Practice makes perfect.
+> **Practise - Loops and Conditionals**
 > 
 > **Question 1:**
 > Write a program which does the following:
 > Accepts an integer n asks the user to input n numbers and output the sum of even numbers, odd numbers and the total sum
 > 
-> **Sample input:**
-> 4 (value of n)
-> 1 6 3 5 (4 numbers inputted by the user)
+>> **Sample input:**
+>> 4 (value of n)
+>> 1 6 3 5 (4 numbers inputted by the user)
 >
-> **Sample output:**
-> Sum of even numbers is: 6
-> Sum of odd numbers is : 9
-> Total sum = 15
+>> **Sample output:**
+>> Sum of even numbers is: 6
+>> Sum of odd numbers is : 9
+>> Total sum = 15
 >
 > **Question 2:**
 > Fibonacci numbers. The fibonacci sequence is as follows: 1 1 2 3 5 8 13 ...
@@ -162,18 +160,18 @@ while (condition) {
 > Eg: (2 = 1+1, 3 = 1+2, 5 = 2+3)
 > Write a program to print the first 'n' fibonacci numbers.
 >
-> **Sample input:**
-> n = 6
+>> **Sample input:**
+>> n = 6
 >
-> **Sample output:**
-> 1 1 2 3 5 8
+>> **Sample output:**
+>> 1 1 2 3 5 8
 >
 > **Question 3:**
 >
 > Prime Numbers. A prime number is a number (>=2) which has its factors as 1 and the number itself ONLY.
 > Write a program that takes as input 'n' (an integer) and prints all the prime numbers in the range [2,n].
-> **Sample input : 11**
-> **Sample output : 2 3 5 7 11**
+>> **Sample input : 11**
+>> **Sample output : 2 3 5 7 11**
 
 ### Arrays
 
