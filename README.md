@@ -25,6 +25,16 @@ cin >> name;
 cout << "Hello " << name << endl;
 ```
 
+### Comments
+
+```cpp
+// This is a single line comment
+
+/* This is a multi-line comment
+   It can span multiple lines
+*/
+```
+
 ### Variables and Data Types
 
 | Type | Description |
@@ -40,7 +50,7 @@ int x = 5;
 float f = 0.01;
 char c = 'c';
 bool b = true;
-string s = "Don't stop at cpp. Once you get familiar with low level concepts learn Rustand functional programming languages like Ocaml";
+string s = "Don't stop at C++. Once you get familiar with low level concepts learn Rustand functional programming languages like Ocaml";
 ```
 
 ### Operators
@@ -62,19 +72,70 @@ string s = "Don't stop at cpp. Once you get familiar with low level concepts lea
 
 ### Control Structures
 
-| Structure | Description |
-| --- | --- |
-| if | Conditional statement |
-| else | Alternative to if |
-| else if | Alternative to if |
-| switch | Switch statement |
-| case | Case statement |
-| default | Default case |
-| for | For loop |
-| while | While loop |
-| do while | Do while loop |
-| break | Break statement |
-| continue | Continue statement |
+#### If, Else, Else If Statements
+
+```cpp
+if (condition) {
+    // code to execute if condition is true
+}
+// the following code is optional
+else if (condition) {
+    // code to execute if condition is true
+}
+else if (condition) {
+    // code to execute if condition is true
+}
+// ... and so on, we can have as many else if statements as we want
+else {  // optional
+    // code to execute if all conditions are false
+}
+```
+
+#### Switch Statement
+
+```cpp
+switch (expression) {
+    case value1:
+        // code to execute if expression is equal to value1
+        break;
+    case value2:
+        // code to execute if expression is equal to value2
+        break;
+    case value3:
+        // code to execute if expression is equal to value3
+        break;
+    // ... and so on, we can have as many case statements as we want
+    default:
+        // code to execute if expression is not equal to any of the values
+        break;
+}
+```
+
+#### For Loop
+
+```cpp
+for (int i = 0; i < 5; i++) {
+    // code to execute 5 times where i takes the values 0, 1, 2, 3, 4 in each iteration
+}
+
+// in general the syntax is
+for (initialization; condition; increment) {
+    // code to execute
+}
+```
+
+> [!NOTE]
+> The initialization and increment are optional and the condition is mandatory.
+> The initialization executes only once (at the start of the loop) and the increment executes at the end of each iteration.
+> The condition is checked at the start of each iteration and if it is true the loop continues, if it is false the loop stops.
+
+#### While Loop
+
+```cpp
+while (condition) {
+    // code to execute while condition is true
+}
+```
 
 ### Functions
 
@@ -88,7 +149,7 @@ int add(int a, int b) {
 
 ```cpp
 int arr[5] = {1, 2, 3, 4, 5};
-``` 
+```
 
 ### Pointers
 
