@@ -69,6 +69,20 @@ string s = "Don't stop at C++. Once you get familiar with low level concepts lea
 | *= | Multiplication and assignment |
 | /= | Division and assignment |
 | %= | Modulo and assignment |
+| == | Equal to |
+| != | Not equal to |
+| < | Less than |
+| > | Greater than |
+| <= | Less than or equal to |
+| >= | Greater than or equal to |
+| && | Logical AND |
+| \|\| | Logical OR |
+| ! | Logical NOT |
+| >> | Right shift |
+| << | Left shift |
+| & | Bitwise AND |
+| \| | Bitwise OR |
+| ^ | Bitwise XOR |
 
 ### Control Structures
 
@@ -141,7 +155,7 @@ while (condition) {
 > The only way you get better at programming is by practicing. Practice makes perfect.
 > **Practise - Loops and Conditionals**
 > 
-> **Question 1:**
+> **Odd-Even sum**
 > Write a program which does the following:
 > Accepts an integer n asks the user to input n numbers and output the sum of even numbers, odd numbers and the total sum
 > 
@@ -154,7 +168,7 @@ while (condition) {
 >> Sum of odd numbers is : 9
 >> Total sum = 15
 >
-> **Question 2:**
+> **Fibonacci numbers**
 > Fibonacci numbers. The fibonacci sequence is as follows: 1 1 2 3 5 8 13 ...
 > The first two numbers are '1' each and every number that follows it is the sum of the preceeding two numbers (the two numbers before it). 
 > Eg: (2 = 1+1, 3 = 1+2, 5 = 2+3)
@@ -166,11 +180,12 @@ while (condition) {
 >> **Sample output:**
 >> 1 1 2 3 5 8
 >
-> **Question 3:**
+> **Prime Numbers**
 >
 > Prime Numbers. A prime number is a number (>=2) which has its factors as 1 and the number itself ONLY.
 > Write a program that takes as input 'n' (an integer) and prints all the prime numbers in the range [2,n].
 >> **Sample input : 11**
+>
 >> **Sample output : 2 3 5 7 11**
 
 ### Arrays
@@ -204,18 +219,60 @@ s[6] = 'W';
 using namespace std;        // to use std namespace so that we don't have to write std:: before every function
 ```
 
-### Functions
-
-```cpp
-int add(int a, int b) {   // function declaration
-    return a + b;
-}
-
-int main() {
-    int x = add(5, 3);    // function call
-    cout << x << endl;
-}
-```
+> [!TIP]
+> Practice the above concepts with the following questions:
+> 
+> **Palindrome Checker**
+> A palindrome is a WORD which reads the same backwards and forwards.
+>
+>> For example - "racecar" is a palindrome whereas "prabhat" is not a palindrome
+>> "prabhat" read backwards is "tahbarp" which is clearly not the same as "prabhat".
+>> s is a single word with no spaces and is entirely in lowercase
+>
+> ```cpp
+> using namespace std;
+> 
+> int main(){
+> 	string s;
+> 	cin>>s; //input the string
+> 	//write code to check if its a palindrome
+> 	cout<<s<<" is/is not a palindrome\n";
+> }
+> ```
+> 
+> **Find dulicates in a sorted array**
+> You are given n followed by an array of n integers sorted in increasing order. Print out all the duplicated elements in the array.
+> 
+>> Example:
+>> Input: n = 5, arr[] = {1, 2, 2, 2, 3, 4, 5, 5}
+>> Output: 2 5
+> 
+> ```cpp
+> #include <bits/stdc++.h>
+> using namespace std;
+>
+> int main(){
+> 	int n;
+> 	cin>>n;
+> 	int arr[n];
+> 	for(int i=0;i<n;i++){
+> 		cin>>arr[i];
+> 	}
+> 	// arr is in sorted order
+>     // now find the duplicates and print them 
+> }
+> ```
+> ### Functions
+> 
+> ```cpp
+> int add(int a, int b) {   // function declaration
+>     return a + b;
+> }
+> 
+> int main() {
+>     int x = add(5, 3);    // function call
+>     cout << x << endl;
+> }
 
 ### Recursion
 
@@ -243,7 +300,7 @@ void increment(int *x) {
 void increment(int x) { 
     // a new integer variable x is created in the function scope and the value of the parameterpassed is copied to it
 
-    x++;    
+    x++;
 }
 
 int main() {
