@@ -413,6 +413,12 @@ Wordle is a popular word game in which the player has to guess a five-letter wor
     - As a zip file
     - Submit a link to your github repository
     - Fork this repository and create a pull request.
+
+> [!NOTE]
+> Change the form link and add the submission date below before sending out a mail.
+
+- Fill out this [form](https://docs.google.com/forms) to submit your solution as per your choice on or before _________.
+
 > [!TIP]
 > You can refer to this [quick tutorial](https://www.youtube.com/watch?v=HkdAHXoRtos&t=43s) to get started with git and look into other detailed tutorials available online as per need.
 
