@@ -1,6 +1,6 @@
 # Roadmap
 
-If you are already well-versed with the basics of programming you can skip to the [Wordle Solver Challenge](#programming-challenge---wordle-solver) section.
+If you are already well-versed with the basics of programming you can skip to the [Wordle Solver Challenge](./wordle-solver/README.md) section.
 
 ## Why C++ ?
 
