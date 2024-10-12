@@ -34,10 +34,10 @@ Wordle is a popular word game in which the player has to guess a five-letter wor
 > You can refer to this [quick tutorial](https://www.youtube.com/watch?v=HkdAHXoRtos&t=43s) to get started with git and look into other detailed tutorials available online as per need.
 
 - You can refer to articles or videos on various algorithms and approaches to solve the problem. However we strongly discourage any form of plagiarism.
-  > [!TIP]
-  > Watch this [video by 3B1B](https://www.youtube.com/watch?v=v68zYyaEmEA)
+> [!TIP]
+> Watch this [video by 3B1B](https://www.youtube.com/watch?v=v68zYyaEmEA)
 - It would be great if you could design your own solution and explain the logic behind it.
-- Achieving feature parity with the [wordle bot](https://ybenhayun.github.io/wordlebot/) would be commendable.
+- Achieving feature parity with the [wordle bot](https://ybenhayun.github.io/wordlebot/) would be commendable (without looking at its source code :) ).
 
 > [!CAUTION]
 > **Only for programmers with nerves of steel!**
