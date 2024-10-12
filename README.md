@@ -161,7 +161,7 @@ while (condition) {
 ```
 
 > [!IMPORTANT]
-> The only way you get better at programming is by practicing. Practice makes perfect.
+> The only way you get better at programming is by practicing.
 > **Practise - Loops and Conditionals**
 > 
 > **Odd-Even sum**
@@ -198,9 +198,10 @@ while (condition) {
 >> **Sample output : 2 3 5 7 11**
 
 ### Arrays
+Arrays are used to store multiple values of the same data type in a single variable.
 
 ```cpp
-int arr[5] = {1, 2, 3, 4, 5};
+int arr[5] = {1, 2, 3, 4, 5}; // arr is an array of 5 integers
 arr[0] = 10;
 // now arr is {10, 2, 3, 4, 5}
 ```
@@ -212,6 +213,7 @@ In C strings are represented as an array of characters.
 string s = "hello world!";
 s[0] = 'H';
 s[6] = 'W';
+// s is now "Hello world!"
 ```
 
 ### Header Files
@@ -274,16 +276,23 @@ using namespace std;        // to use std namespace so that we don't have to wri
 > ```
 
 ### Functions
-> 
-> ```cpp
-> int add(int a, int b) {   // function declaration
->     return a + b;
-> }
-> 
-> int main() {
->     int x = add(5, 3);    // function call
->     cout << x << endl;
-> }
+
+```cpp
+int add(int a, int b) {   // function declaration
+    return a + b; // the return statement is optional and returns control back to the caller.
+}
+
+int main() {
+    int x = add(5, 3);    // function call
+    cout << x << endl;
+}
+
+// The general syntax of a function is as follows:
+
+return_type function_name(parameter_list) {
+    // function body
+}
+```
 
 ### Recursion
 
@@ -337,6 +346,46 @@ int main() {
 }
 ```
 
+## STL (Standard Template Library)
+
+The STL is a collection of template classes and functions that are defined in various header files. You can use **"bits/stdc++.h"** to include all of them (not a good practice. Ideally one must include only those header files that are required for the program. But this can be ignored for now). Following are some of the commonly used ones:
+
+### Vector
+
+Vector is a dynamic array that can grow or shrink in size. It is a template class and it can be used to store elements of any data type. The elements are stored in contiguous memory locations. The size of the vector is fixed at the time of declaration and can be changed at any time.
+
+```cpp
+vector<int> v;  // declare an empty vector of integers
+v.push_back(10);  // add an element to the end of the vector
+v.push_back(20);  // add another element to the end of the vector
+v.push_back(30);  // add another element to the end of the vector
+v.pop_back();  // remove the last element from the vector
+cout << v.size() << endl;  // print the size of the vector
+```
+
+### String
+
+String is a class that represents a sequence of characters. Like vectors, strings are also a template class, can be used to store elements of any data type and are dynamic in size. However unlike vectors, strings can take input directly from the user.
+```cpp
+string s;  // declare an empty string
+cout << "Enter a string: ";
+cin >> s;  // take input from the user
+s.push_back('!');  // add an element to the end of the string
+cout << s << endl;  // print the string
+s.pop_back();  // remove the last element from the string
+```
+
+### Sorting
+
+```cpp
+vector<int> v = {5, 2, 3, 1, 4};
+sort(v.begin(), v.end());  // sort the vector in ascending order
+reverse(v.begin(), v.end());  // sort the vector in descending order
+```
+
+> [!IMPORTANT]
+> Now that you have learnt all about functions, pointers, vectors and much more, you can start preparing for technical interviews by solving some Easy level questions on [Leetcode](https://leetcode.com/).
+> These are a [list of beginner questions](BeginnerLeetcodeQuestions.md) which can be solved if you have clearly understood whatever we have learned so far.
 
 ## Programming Challenge - Wordle Solver
 
@@ -364,12 +413,14 @@ Wordle is a popular word game in which the player has to guess a five-letter wor
     - As a zip file
     - Submit a link to your github repository
     - Fork this repository and create a pull request.
-> [!TIP] You can refer to this [quick tutorial](https://www.youtube.com/watch?v=HkdAHXoRtos&t=43s) to get started with git and look into other detailed tutorials available online as per need.
+> [!TIP]
+> You can refer to this [quick tutorial](https://www.youtube.com/watch?v=HkdAHXoRtos&t=43s) to get started with git and look into other detailed tutorials available online as per need.
 
 - You can refer to articles or videos on various algorithms and approaches to solve the problem. However we strongly discourage any form of plagiarism.
-> [!TIP] Watch this [video by 3B1B](https://www.youtube.com/watch?v=v68zYyaEmEA)
+> [!TIP]
+> Watch this [video by 3B1B](https://www.youtube.com/watch?v=v68zYyaEmEA)
 - It would be great if you could design your own solution and explain the logic behind it. 
 - Achieving feature parity with the [wordle bot](https://ybenhayun.github.io/wordlebot/) would be commendable.
 
 > [!CAUTION]
-> If you feel this is easy for you, develop a solution wherein the bot automatically solves the wordle game for you (Absolutely no human intervention is required). 
+> If you feel this is a piece of cake for you, develop a solution wherein the bot automatically solves the wordle game for you (Absolutely no human intervention is required). 
