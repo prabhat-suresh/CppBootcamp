@@ -41,5 +41,3 @@ Wordle is a popular word game in which the player has to guess a five-letter wor
 
 > [!CAUTION]
 > If you feel this is a piece of cake for you, develop a solution wherein the bot automatically solves the wordle game for you (Absolutely no human intervention is required).
-
-# SUBMISSIONS
