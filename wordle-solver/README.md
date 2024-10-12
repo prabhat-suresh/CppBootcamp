@@ -40,6 +40,6 @@ Wordle is a popular word game in which the player has to guess a five-letter wor
 - Achieving feature parity with the [wordle bot](https://ybenhayun.github.io/wordlebot/) would be commendable.
 
 > [!CAUTION]
-> If you feel this is a piece of cake for you, develop a solution wherein the bot automatically solves the wordle game for you (Absolutely no human intervention is required).
-
-# SUBMISSIONS
+> Only for those with nerves of steel!
+> Your mission, should you choose to accept it (and you totally should, because who doesn’t want to be a Wordle wizard?), is to develop a solution that lets our bot solve the Wordle game without any human intervention. That’s right—no peeking, no hints, just pure, unadulterated automation!
+>Think of it like training your pet goldfish to fetch the newspaper. If you succeed, you’ll be the proud parent of a bot that can outsmart all your friends at Wordle while you sit back, relax, and snack on your favorite treats. Happy coding!
