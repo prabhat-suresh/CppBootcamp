@@ -1,5 +1,7 @@
 # Roadmap
 
+If you are already well-versed with the basics of programming you can skip to the [Challenge](#Programming Challenge) where your skills will be put to test.
+
 ## Why C++ ?
 
 C++ is a very powerful language and has a lot of features that make it a good choice for many applications:
@@ -15,6 +17,7 @@ C++ is a very powerful language and has a lot of features that make it a good ch
 ## Basics of C++
 
 ### Input and Output
+Printing to the console is done using the `cout` object. The `endl` object is used to insert a new line after printing. Similarly, the `cin` object is used to read input from the user.
 
 ```cpp
 cout << "Hello World!" << endl;
@@ -26,6 +29,7 @@ cout << "Hello " << name << endl;
 ```
 
 ### Comments
+Comments are used to add notes to the code to help the programmer understand the code. These are not executed by the computer and are ignored by the compiler.
 
 ```cpp
 // This is a single line comment
@@ -37,6 +41,8 @@ cout << "Hello " << name << endl;
 
 ### Variables and Data Types
 
+Variables are used to store data in the computer. They can be of different data types. The data type of a variable is specified when it is declared. 
+
 | Type | Description |
 | --- | --- |
 | int | Integer |
@@ -46,12 +52,15 @@ cout << "Hello " << name << endl;
 | string | String |
 
 ```cpp
-int x = 5;
-float f = 0.01;
+int x;  // declare an integer variable x
+float f = 0.01; // declare a float variable f and initialize it to 0.01
 char c = 'c';
-bool b = true;
-string s = "Don't stop at C++. Once you get familiar with low level concepts learn Rust and functional programming languages like Ocaml";
+bool b;
+b = true; // assign the value true to the boolean variable b
+string s = "Don't stop at C++. Once you get familiar with low level concepts learn Rust and functional programming languages like Ocaml and Haskell";
 ```
+
+There are many more data types in C++ such as `long`, `double`, `short`, `unsigned int` etc.
 
 ### Operators
 
@@ -197,6 +206,7 @@ arr[0] = 10;
 ```
 
 #### Strings
+In C strings are represented as an array of characters.
 
 ```cpp
 string s = "hello world!";
@@ -262,7 +272,8 @@ using namespace std;        // to use std namespace so that we don't have to wri
 >     // now find the duplicates and print them 
 > }
 > ```
-> ### Functions
+
+### Functions
 > 
 > ```cpp
 > int add(int a, int b) {   // function declaration
@@ -285,6 +296,17 @@ int factorial(int n) {
         return n * factorial(n - 1);    // recursive call
     }
 }
+```
+
+### Scope of Variables
+
+```cpp
+int x = 5;
+{
+    int x = 10;   // x is in the local scope of the block (The space within the curly braces)
+    cout << x << endl;  // prints 10
+}   // The scope of the local x ends here
+cout << x << endl;  // prints 5 as the x here refers to the global x
 ```
 
 ### Pointers
@@ -314,3 +336,40 @@ int main() {
     cout << x << endl;
 }
 ```
+
+
+## Programming Challenge - Wordle Solver
+
+### Problem Statement
+
+Wordle is a popular word game in which the player has to guess a five-letter word.
+
+- Check out the rules and play today's [Wordle](https://www.nytimes.com/games/wordle/index.html). You can play multiple games at [Wordly](https://wordly.org/) to get a hang of the game.
+- The challenge is to build a wordle solver that can assist you in solving the game.
+
+> [!TIP]
+> Check out the [wordle bot](https://ybenhayun.github.io/wordlebot/) to get an idea of what's expected from your wordle solver.
+
+##### Guidelines
+- This is the [list](WordleAnswersList.txt) of all possible wordle answers and this is [set](FiveLetterWords.txt) of all possible valid guesses.
+- Your wordle solver can be written in any language of your choice.
+- Your solution can be a CLI (Command Line Interface) application. However a GUI or TUI will garner more brownie points.
+- Your solution will be scored based on the following criteria:
+  1. Correctness
+  2. Optimality
+  3. Good software practices such as modularity, readability, code quality, documentation (adding a README.md file), etc.
+  4. Memory and Run-time efficiency
+  5. Elegance
+- To submit your solution you can use any of the following methods (they are in the increasing order of brownie points):
+    - As a zip file
+    - Submit a link to your github repository
+    - Fork this repository and create a pull request.
+> [!TIP] You can refer to this [quick tutorial](https://www.youtube.com/watch?v=HkdAHXoRtos&t=43s) to get started with git and look into other detailed tutorials available online as per need.
+
+- You can refer to articles or videos on various algorithms and approaches to solve the problem. However we strongly discourage any form of plagiarism.
+> [!TIP] Watch this [video by 3B1B](https://www.youtube.com/watch?v=v68zYyaEmEA)
+- It would be great if you could design your own solution and explain the logic behind it. 
+- Achieving feature parity with the [wordle bot](https://ybenhayun.github.io/wordlebot/) would be commendable.
+
+> [!CAUTION]
+> If you feel this is easy for you, develop a solution wherein the bot automatically solves the wordle game for you (Absolutely no human intervention is required). 
