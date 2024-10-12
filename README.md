@@ -1,6 +1,6 @@
 # Roadmap
 
-If you are already well-versed with the basics of programming you can skip to the [Challenge](#Programming Challenge) where your skills will be put to test.
+If you are already well-versed with the basics of programming you can skip to the [Wordle Solver Challenge](#programming-challenge---wordle-solver) section.
 
 ## Why C++ ?
 
