@@ -384,7 +384,7 @@ reverse(v.begin(), v.end());  // sort the vector in descending order
 ```
 
 > [!IMPORTANT]
-> Now that you have learnt all about functions, pointers, vectors and much more, you can start preparing for technical interviews by solving some Easy level questions on [Leetcode](https://leetcode.com/).
+> Now that you have learnt all about functions, pointers, vectors and much more, you can start preparing for technical interviews by solving some [Easy level questions on Leetcode](https://leetcode.com/problemset/?difficulty=EASY&page=1).
 > These are a [list of beginner questions](BeginnerLeetcodeQuestions.md) which can be solved if you have clearly understood whatever we have learned so far.
 
 ## Programming Challenge - Wordle Solver
