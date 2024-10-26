@@ -53,9 +53,9 @@ def updatelst(ele, words):
 
     return restst
 
-driverpath = r".\chromedriver-win64\chromedriver.exe"
+# driverpath = r".\chromedriver-win64\chromedriver.exe"
 # uncomment the above driver for windows, the lower driver is for linux
-# driverpath = r"./chromedriver-linux64/chromedriver"
+driverpath = r"./chromedriver-linux64/chromedriver"
 
 service = Service(executable_path=driverpath)
 driver = webdriver.Chrome(service=service)
