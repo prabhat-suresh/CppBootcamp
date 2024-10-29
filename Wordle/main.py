@@ -52,7 +52,7 @@ def openwordle():
 
 def main(iterationNo, initialPossibilities):
     while iterationNo <= 6:
-        bestAns = "soare" if iterationNo == 1 else Testing.chooseGuessWithBestEntropy(initialPossibilities)
+        bestAns = "raise" if iterationNo == 1 else Testing.chooseGuessWithBestEntropyPlusFreq(initialPossibilities)
         driver.find_element(By.TAG_NAME, "body").send_keys(bestAns)
         driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ENTER)
         time.sleep(2)

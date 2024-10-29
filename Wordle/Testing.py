@@ -1,10 +1,17 @@
 import math
+from wordfreq import word_frequency
 
 with open("FiveLetterWords2.txt") as f:
-    allGuesses = f.readlines()
+    allGuesses = f.read().splitlines()
 
 with open("WordleAnswersList.txt") as f:
-    allAnswers = f.readlines()
+    allAnswers = f.read().splitlines()
+
+possibilitiesFreq = [(word.strip(), word_frequency(word.strip(), 'en')) for word in allGuesses]
+possibilitiesSorted = sorted(possibilitiesFreq, key=lambda x: x[1], reverse=True)
+# print(possibilitiesSorted)
+possibilitiesSorted = [(word,1) for (word,freq) in possibilitiesSorted if possibilitiesSorted.index((word,freq)) < len(possibilitiesSorted)/2] + [(word,0) for (word,freq) in possibilitiesSorted if possibilitiesSorted.index((word, freq)) >= len(possibilitiesSorted)/2]
+possibilitiesSortedDict = dict(possibilitiesSorted)
 
 
 def getColorList(guess, ans):
@@ -33,13 +40,18 @@ def getEntropy(guess):
     return entropy
 
 
-def chooseGuessWithBestEntropy(reducedPossibilities):
-    maxEntropy = 0
+def getFreq(guess):
+    return possibilitiesSortedDict[guess]
+
+def chooseGuessWithBestEntropyPlusFreq(reducedPossibilities):
+    maxVal = 0
     chosenGuess = ""
     for guess in reducedPossibilities:
         entropy = getEntropy(guess)
-        if entropy > maxEntropy:
-            maxEntropy = entropy
+        freq = getFreq(guess)
+        totalVal = entropy + freq
+        if totalVal > maxVal:
+            maxVal = totalVal
             chosenGuess = guess
     return chosenGuess
 
